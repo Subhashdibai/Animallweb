@@ -1,0 +1,110 @@
+.home-wrapper {
+width: 100%;
+min-height: 100vh;
+background: #f5f7fa;
+}
+
+
+.top-header {
+background: #0e7a6d;
+padding: 15px 30px;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.logo-text h3 {
+margin: 0;
+font-size: 20px;
+}
+
+
+.feature-row {
+margin: 40px auto;
+width: 85%;
+display: flex;
+justify-content: space-between;
+}
+
+
+.feature-card {
+width: 30%;
+background: #d4faf3;
+padding: 20px;
+border-radius: 18px;
+text-align: center;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.main-banner {
+width: 85%;
+margin: auto;
+background: white;
+padding: 20px;
+border-radius: 15px;
+display: flex;
+align-items: center;
+box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+.buy-sell-row {
+width: 85%;
+margin: 40px auto;
+display: flex;
+justify-content: space-between;
+}
+
+
+.buy-sell-card {
+width: 48%;
+background: linear-gradient(#0e8a77, #0c6e5e);
+padding: 25px;
+border-radius: 18px;
+color: white;
+position: relative;
+}
+
+
+.count-text {
+margin: 8px 0;
+}
+
+
+.edu-title {
+width: 85%;
+margin: 30px auto 10px;
+font-size: 20px;
+font-weight: bold;
+}
+
+.edu-row {
+display: flex;
+width: 85%;
+margin: auto;
+justify-content: space-between;
+}
+
+.edu-box {
+width: 30%;
+background: white;
+text-align: center;
+padding: 20px;
+border-radius: 12px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.bottom-navbar {
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+background: white;
+padding: 12px;
+display: flex;
+justify-content: space-around;
+border-top: 1px solid #ccc;
+}
