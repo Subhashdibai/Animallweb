@@ -1,0 +1,82 @@
+.page-wrapper {
+padding: 30px;
+text-align: center;
+}
+
+
+.cattle-list {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+
+.cattle-card {
+width: 260px;
+background: #fff;
+padding: 15px;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+transition: 0.3s;
+}
+
+
+.cattle-card:hover {
+transform: translateY(-5px);
+}
+
+
+.cattle-card img {
+width: 100%;
+border-radius: 10px;
+}
+
+
+.sell-form {
+display: flex;
+flex-direction: column;
+width: 300px;
+margin: 20px auto;
+gap: 12px;
+}
+
+
+.sell-form input,
+.sell-form button {
+padding: 12px;
+border-radius: 8px;
+border: 1px solid #ccc;
+}
+
+
+.sell-form button {
+background-color: #007d6e;
+color: #fff;
+border: none;
+cursor: pointer;
+}
+.view-btn {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: white;
+  padding: 10px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.view-btn:hover {
+  background: linear-gradient(135deg, #43A047, #1B5E20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.view-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
