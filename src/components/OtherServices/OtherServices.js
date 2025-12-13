@@ -20,19 +20,19 @@ return (
 <div className="services-grid">
 <ServiceCard
 icon="https://cdn-icons-png.flaticon.com/512/3068/3068612.png"
-title="Cattle Loan"
+title="Goat Loan"
 subtitle="Loan at Home"
 locked={true}
 />
 <ServiceCard
 icon="https://cdn-icons-png.flaticon.com/512/942/942748.png"
-title="Cattle Insurance"
+title="Goat Insurance"
 subtitle="Cheap Insurance"
 locked={true}
 />
 <ServiceCard
 icon="https://cdn-icons-png.flaticon.com/512/1077/1077976.png"
-title="Cattle Discussion"
+title="Goat Discussion"
 subtitle="Share Knowledge"
 locked={false}
 />
@@ -69,7 +69,7 @@ locked={true}
 
 
 {/* Banner Section */}
-<div className="banner-box">
+{/* <div className="banner-box">
 <div className="banner-text">
 <h3>बेचना आसान है Animall के साथ</h3>
 <button className="post-btn">पशु दर्ज करें</button>
@@ -82,6 +82,45 @@ alt="farmer"
 
 
 <p className="footer-text">BHARAT का अपना ऐप ❤️</p>
+</div> */}
+
+
+
+<div className="banner-wrapper">
+  <div className="banner-box">
+    <div className="banner-text">
+      <h3>
+        बेचना आसान है <br />
+        <span>Animall के साथ</span>
+      </h3>
+
+      <button className="post-btn">पशु दर्ज करें</button>
+    </div>
+
+
+<img
+  src="/Goat.bg.jpg"
+  alt="farmer"
+  className="banner-img"
+  style={{
+    width: "342px",
+    height: "auto",
+    objectFit: "cover",   
+    marginRight: -37,      
+    padding: 0
+  }}
+/>
+
+  </div>
+
+  <p className="footer-text">
+    <span className="bharat">BHARAT</span>
+    <br />
+    का अपना ऐप ❤️
+    <br />
+    <strong>Animall</strong>
+  </p>
 </div>
-);
+
+</div>);
 }

@@ -19,8 +19,8 @@ export default function HeaderLogo() {
   return (
     <div className="header-logo">
       <img 
-        src="/Animall.logo.svg" 
-        alt="Animall Logo" 
+        src="/Goat.logo.svg" 
+        alt="Goat Logo" 
          style={{ width: "70px", height: "auto" }}
       />
       {/* <p>Cow Buffalo app</p> */}
@@ -36,8 +36,9 @@ export default function HeaderLogo() {
     fontWeight: "bold"      
   }}
 >
+ 
   
-  Cow Buffalo App
+  Goat App
 </p>
 
     </div>

@@ -8,6 +8,11 @@ import MailInput from "../components/MailInput";
 import { useNavigate } from "react-router-dom";
 
 
+/* <img src={goatLogo} alt="Goat Logo" /> */
+<img src="/Goat.logo.svg" alt="Goat Logo" />
+
+
+
 
 
 

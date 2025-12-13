@@ -116,10 +116,12 @@ justify-content: space-around;
 border-top: 1px solid #ccc;
 }
 
+.left-title {
+  text-align: left;     /* 🔥 LEFT */
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin: 10px 0;
+}
 
 
-/* .edu-img {
-  width: 200px;
-  height: 150px;
-  margin-bottom: 2px;
-} */
