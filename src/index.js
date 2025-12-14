@@ -16,11 +16,55 @@
 // // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
 
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import App from "./App";
+// import "./styles/global.css";
+
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(<App />);
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import App from "./App";
+// import "./styles/global.css";
+// // import { BrowserRouter } from "react-router-dom";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+// );
+
+
+// import React from "react";
+// import ReactDOM from "react-dom/client";
+// import App from "./App";
+// //  import { BrowserRouter } from "react-router-dom";
+
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(
+
+//      <App />
+// //   <BrowserRouter>
+// //     <App />
+// //   </BrowserRouter>
+// );
+
+
+
+
+
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import { BrowserRouter } from "react-router-dom";
 import App from "./App";
-import "./styles/global.css";
-
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+root.render(
+     <App />
+//   <BrowserRouter>
+//     <App />
+//   </BrowserRouter>
+);

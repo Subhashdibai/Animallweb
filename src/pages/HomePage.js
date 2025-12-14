@@ -7,11 +7,13 @@ import BuySellCard from "../components/BuySellCard";
 import HomeFeatureCard from "../components/HomeFeatureCard";
 import OtherServices from "../components/OtherServices/OtherServices";
 
+// import ServiceCards from "../components/ServiceCards";
+
 import "../styles/HomePage.css";
 
 
 
-// import { useNavigate } from "react-router-dom";
+ //import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
   // const navigate = useNavigate();
@@ -152,7 +154,7 @@ export default function HomePage() {
           <img src="/fast_sell.png" alt="Fast Sell" className="edu-img" />
           How to sell cattle in 1 day?</div>
       </div> */}
-
+    {/* <ServiceCards /> */}
      <OtherServices />
        <BottomNavbar />
     </div>
