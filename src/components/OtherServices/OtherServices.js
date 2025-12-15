@@ -2,8 +2,10 @@ import React from "react";
 import ServiceCard from "./ServiceCard";
 import "./OtherServices.css";
 
+import { useNavigate } from "react-router-dom";
 
 export default function OtherServices() {
+    const navigate = useNavigate();
 return (
 <div className="other-services-wrapper">
     
@@ -44,7 +46,7 @@ locked={true}
 />
 </div>
 {/* <h4>रोज़ की बात, बदले हालात</h4> */}
-<h4 className="left-heading">रोज़ की बात, बदले हालात</h4>
+<h4 className="left-heading">Everyday things, changing circumstances</h4>
 
 <div className="video-box">
   
@@ -53,7 +55,7 @@ locked={true}
 
 
  
-<span>जाने भारत में पहले कितनी नस्लें होती थी</span>
+<span>Know how many races existed in India earlier</span>
  <div className="left-box"></div>
   <div className="left-box"></div>
    <div className="left-box"></div>
@@ -64,7 +66,13 @@ locked={true}
         <div className="left-box"></div>
          <div className="left-box"></div>
           <div className="left-box"></div>
-<button className="view-btn">देखें ›</button>
+{/* <button className="view-btn">देखें ›</button> */}
+  <button
+        className="see-btn"
+        onClick={() => navigate("/check-rate")}
+      >
+        देखें
+      </button>
 </div>
 
 
@@ -90,11 +98,19 @@ alt="farmer"
   <div className="banner-box">
     <div className="banner-text">
       <h3>
-        बेचना आसान है <br />
+      Easy to Sell <br />
         <span>Animall के साथ</span>
+
       </h3>
 
-      <button className="post-btn">पशु दर्ज करें</button>
+       <button
+            className="enter-animal-btn"
+            onClick={() => navigate("/sell")}
+          >
+            Enter Animal
+             </button>
+
+      {/* <button className="post-btn">Enter Animal</button> */}
     </div>
 
 
@@ -102,13 +118,13 @@ alt="farmer"
   src="/Goat.bg.jpg"
   alt="farmer"
   className="banner-img"
-  style={{
-    width: "342px",
-    height: "auto",
-    objectFit: "cover",   
-    marginRight: -37,      
-    padding: 0
-  }}
+  // style={{
+  //   width: "342px",
+  //   height: "auto",
+  //   objectFit: "cover",   
+  //   marginRight: -37,      
+  //   padding: 0
+  // }}
 />
 
   </div>

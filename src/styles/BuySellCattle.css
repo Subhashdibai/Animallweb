@@ -80,3 +80,93 @@ cursor: pointer;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
+
+
+.sell-page {
+  min-height: 100vh;
+  background: #f4fffc;
+  padding: 40px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header */
+.sell-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sell-header h1 {
+  color: #0f766e;
+  font-size: 32px;
+}
+
+.sell-header p {
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Card */
+.sell-card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
+.sell-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.sell-form input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.sell-form input:focus {
+  outline: none;
+  border-color: #0f766e;
+}
+
+/* Button */
+.sell-btn {
+  margin-top: 10px;
+  background: #0f766e;
+  color: #fff;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sell-btn:hover {
+  background: #0d5f59;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .sell-header h1 {
+    font-size: 26px;
+  }
+
+  .sell-card {
+    padding: 22px;
+  }
+}

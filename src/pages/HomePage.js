@@ -6,6 +6,11 @@ import BottomNavbar from "../components/BottomNavbar";
 import BuySellCard from "../components/BuySellCard";
 import HomeFeatureCard from "../components/HomeFeatureCard";
 import OtherServices from "../components/OtherServices/OtherServices";
+// import ServiceCards from "../components/ServiceCards";
+import { useNavigate } from "react-router-dom";
+
+
+
 
 // import ServiceCards from "../components/ServiceCards";
 
@@ -17,13 +22,17 @@ import "../styles/HomePage.css";
 
 export default function HomePage() {
   // const navigate = useNavigate();
+  const navigate = useNavigate();
+
 
   return (
+
+    
     
     <div className="home-wrapper">
 
     
-      {/* ===== Top Header ===== */}
+     
       <div className="top-header">
         <div className="logo-text">
           <img
@@ -35,35 +44,54 @@ export default function HomePage() {
           <p>Goat App</p>
         </div>
 
-        <div className="right-icons">
+        {/* <div className="right-icons">
           <div className="coin">
             <img src="/coin.png" alt="coin" width="50" />
-          </div>
+          </div> */}
+          <div className="right-icons">
+   <div
+    className="coin"
+    onClick={() => navigate("/coins")}
+    style={{ cursor: "pointer" }}
+  >
+    <img src="/coin.png" alt="coin" width="50" />
+  
+</div> 
 
-          <div className="profile">
-            <img src="/profile.png" alt="profile" width="50" />
-          </div>
+
+        
+          <div
+  className="profile"
+  onClick={() => navigate("/profile")}
+  style={{ cursor: "pointer" }}
+>
+  <img src="/profile.png" alt="profile" width="50" />
+</div>
+
         </div>
       </div>
 
-      {/* ===== Feature Boxes ===== */}
+     
       <div className="feature-row">
         <HomeFeatureCard 
           title="Check Rate" 
           subtitle="Correct price of cattle" 
-          img="/checkrate.png" 
+          img="/checkrate.png"
+          onClick={() => navigate("/check-rate")} 
         />
 
         <HomeFeatureCard 
           title="Increase Milk" 
           subtitle="Make Plan" 
           img="\increasemilk (1).png"
+             onClick={() => navigate("/increase-milk")}
         />
 
         <HomeFeatureCard 
           title="Goat Expert" 
           subtitle="Get Advice" 
           img="/expert.png"
+           onClick={() => navigate("/goat-expert")}
         />
       </div>
 
@@ -85,18 +113,20 @@ export default function HomePage() {
 
                 
           <button
-  style={{
-    width: "395px",
-    height: "45px",
-    backgroundColor: "#28a745",
-    color: "white",
-    border: "none",
-    borderRadius: "10px",
-    fontSize: "18px",
-    fontWeight: "bold",
-    cursor: "pointer",
-    float: "right"
-  }}
+            className="plan-btn"
+  onClick={() => navigate("/plan")}
+  // style={{
+  //   width: "395px",
+  //   height: "45px",
+  //   backgroundColor: "#28a745",
+  //   color: "white",
+  //   border: "none",
+  //   borderRadius: "10px",
+  //   fontSize: "18px",
+  //   fontWeight: "bold",
+  //   cursor: "pointer",
+  //   float: "right"
+  // }}
 >
   Get a plan ₹1
 </button>
@@ -116,8 +146,10 @@ export default function HomePage() {
         <BuySellCard 
           title="Sell Goat" 
           count="987+ Buyers"
-          img="/sell.goat.png"
+          img="/sell.goat (1).png"
           link="/sell"
+           style={{ width: "200px", height: "100px" }}
+          
         />
       </div>
        
@@ -127,20 +159,21 @@ export default function HomePage() {
 
 <div className="edu-row">
   <div className="edu-box">
-    <img src="\Buye.Goat.png" alt="Buy Goat" className="edu-img" />
-    How to buy Goat from Animall? 
+    <img src="/Buye.Goat.png" alt="Buy Goat" className="edu-img" />
+    <p>How to buy Goat from Animall?</p>
   </div>
 
   <div className="edu-box">
-    <img src="\selll.Goat.png" alt="Sell Goat" className="edu-img" />
-     Learn the right way to sell Goat
+    <img src="/selll.Goat.png" alt="Sell Goat" className="edu-img" />
+    <p>Learn the right way to sell Goat</p>
   </div>
 
   <div className="edu-box">
-    <img src="\fastt.Goat.png" alt="Fast Sell" className="edu-img" />
-    How to sell Goat in 1 day?
+    <img src="/fastt.Goat.png" alt="Fast Sell" className="edu-img" />
+    <p>How to sell Goat in 1 day?</p>
   </div>
 </div>
+
 
 
       {/* <div className="edu-row">
@@ -154,6 +187,7 @@ export default function HomePage() {
           <img src="/fast_sell.png" alt="Fast Sell" className="edu-img" />
           How to sell cattle in 1 day?</div>
       </div> */}
+    {/* <ServiceCards /> */}
     {/* <ServiceCards /> */}
      <OtherServices />
        <BottomNavbar />
