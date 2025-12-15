@@ -12,8 +12,14 @@ import SellCattlePage from "./pages/SellCattlePage";
 import PlanPage from "./pages/PlanPage";
 import ProfilePage from "./pages/ProfilePage";
 import CoinsPage from "./pages/CoinsPage";
+import GoatLoan from "./pages/GoatLoan";
+import GoatInsurance from "./pages/GoatInsurance";
+import GoatDiscussion from "./pages/GoatDiscussion";
+import PlayGame from "./pages/PlayGame";
 
-
+import BuyGoatGuide from "./pages/BuyGoatGuide";
+import SellGoatGuide from "./pages/SellGoatGuide";
+import SellFastGuide from "./pages/SellFastGuide";
 
 
 import CheckRate from "./pages/CheckRate";
@@ -34,9 +40,14 @@ function App() {
         
          <Route path="/home" element={<HomePage />} /> 
          <Route path="/coins" element={<CoinsPage />} />
+        <Route path="/goat-loan" element={<GoatLoan />} />
+        <Route path="/goat-insurance" element={<GoatInsurance />} />
+        <Route path="/goat-discussion" element={<GoatDiscussion />} />
+        <Route path="/play-game" element={<PlayGame />} />
 
-
-       
+        <Route path="/guide/buy-goat" element={<BuyGoatGuide />} />
+        <Route path="/guide/sell-goat" element={<SellGoatGuide />} />
+        <Route path="/guide/sell-fast" element={<SellFastGuide />} />
          <Route path="/check-rate" element={<CheckRate />} />
         <Route path="/increase-milk" element={<IncreaseMilk />} />
         <Route path="/goat-expert" element={<GoatExpert />} />

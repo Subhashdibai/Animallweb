@@ -16,9 +16,42 @@ return (
   Other Services
 </h3>
 
+<div className="services-grid">
+  <ServiceCard
+    icon="https://cdn-icons-png.flaticon.com/512/3068/3068612.png"
+    title="Goat Loan"
+    subtitle="Loan at Home"
+    locked={true}
+    link="/goat-loan"
+  />
+
+  <ServiceCard
+    icon="https://cdn-icons-png.flaticon.com/512/942/942748.png"
+    title="Goat Insurance"
+    subtitle="Cheap Insurance"
+    locked={true}
+    link="/goat-insurance"
+  />
+
+  <ServiceCard
+    icon="https://cdn-icons-png.flaticon.com/512/1077/1077976.png"
+    title="Goat Discussion"
+    subtitle="Share Knowledge"
+    locked={false}
+    link="/goat-discussion"
+  />
+
+  <ServiceCard
+    icon="https://cdn-icons-png.flaticon.com/512/994/994193.png"
+    title="Play Game"
+    subtitle="Win Coins"
+    locked={true}
+    link="/play-game"
+  />
+</div>
 
 
-
+{/* 
 <div className="services-grid">
 <ServiceCard
 icon="https://cdn-icons-png.flaticon.com/512/3068/3068612.png"
@@ -44,7 +77,7 @@ title="Play Game"
 subtitle="Win Coins"
 locked={true}
 />
-</div>
+</div> */}
 {/* <h4>रोज़ की बात, बदले हालात</h4> */}
 <h4 className="left-heading">Everyday things, changing circumstances</h4>
 
@@ -118,13 +151,13 @@ alt="farmer"
   src="/Goat.bg.jpg"
   alt="farmer"
   className="banner-img"
-  // style={{
-  //   width: "342px",
-  //   height: "auto",
-  //   objectFit: "cover",   
-  //   marginRight: -37,      
-  //   padding: 0
-  // }}
+  style={{
+    width: "342px",
+    height: "auto",
+    objectFit: "cover",   
+    marginRight: -37,      
+    padding: 0
+  }}
 />
 
   </div>

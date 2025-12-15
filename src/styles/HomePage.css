@@ -161,7 +161,10 @@ border-top: 1px solid #ccc;
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  float: "right";
   transition: all 0.3s ease;
+   margin-left: 0;        
+  margin-right: auto; 
 }
 
 .plan-btn:hover {
@@ -312,4 +315,52 @@ border-top: 1px solid #ccc;
   color: #111;
   margin: 0;
   line-height: 1.4;
+}
+
+
+.banner-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;              
+  padding-left: 20px;   
+}
+
+.buy-sell-row {
+  display: flex;
+  gap: 8px;  
+}
+
+
+.top-header {
+  height: 80px;             
+  padding: 10px 20px;     
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  background-color: #0f766e; 
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-text h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.right-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }

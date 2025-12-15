@@ -38,10 +38,10 @@ export default function HomePage() {
           <img
             src="/Goat.logo.svg"
             alt="Goat Logo"
-            style={{ width: "70px", height: "auto" }}
+            style={{ width: "60px", height: "auto" }}
           />
-          <h3>Animall.in</h3>
-          <p>Goat App</p>
+          <h3>Goat App</h3>
+          <p>Animall.in</p>
         </div>
 
         {/* <div className="right-icons">
@@ -134,7 +134,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* ===== Buy / Sell Cattle Boxes ===== */}
+     
       <div className="buy-sell-row">
         <BuySellCard 
           title="Buy Goat" 
@@ -155,9 +155,37 @@ export default function HomePage() {
        
        <h3 className="edu-title">Understand every process, in an easy way!</h3>
        
-
-
 <div className="edu-row">
+  <div
+    className="edu-box"
+    onClick={() => navigate("/guide/buy-goat")}
+    style={{ cursor: "pointer" }}
+  >
+    <img src="/Buye.Goat.png" alt="Buy Goat" className="edu-img" />
+    <p>How to buy Goat from Animall?</p>
+  </div>
+
+  <div
+    className="edu-box"
+    onClick={() => navigate("/guide/sell-goat")}
+    style={{ cursor: "pointer" }}
+  >
+    <img src="/selll.Goat.png" alt="Sell Goat" className="edu-img" />
+    <p>Learn the right way to sell Goat</p>
+  </div>
+
+  <div
+    className="edu-box"
+    onClick={() => navigate("/guide/sell-fast")}
+    style={{ cursor: "pointer" }}
+  >
+    <img src="/fastt.Goat.png" alt="Fast Sell" className="edu-img" />
+    <p>How to sell Goat in 1 day?</p>
+  </div>
+</div>
+
+
+{/* <div className="edu-row">
   <div className="edu-box">
     <img src="/Buye.Goat.png" alt="Buy Goat" className="edu-img" />
     <p>How to buy Goat from Animall?</p>
@@ -172,7 +200,7 @@ export default function HomePage() {
     <img src="/fastt.Goat.png" alt="Fast Sell" className="edu-img" />
     <p>How to sell Goat in 1 day?</p>
   </div>
-</div>
+</div> */}
 
 
 
